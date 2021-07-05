@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="https://echo.htmlacademy.ru" id="form" method="POST" >
+        <div class="container">
+            <h1 class="header"><hr>Register<hr></h1>
+            <p class="paragraph">Create your account. It's free and only takes a minute.</p>
+            <p id="errorMessage"></p>
+            <div class="full-name">
+                <div class="first-name">
+                    <input id="firstName" type="text" placeholder="First Name" name="firstname">
+                    <p id="firstError"></p>
+                </div>
+                <div class="last-name">
+                    <input id="surname" type="text" placeholder="Last Name" name="lastname">
+                    <p id="secondError"></p>
+                </div>
+            </div>
+            <div class="email-pas">
+                <input type="text" id="email" placeholder="Email">
+                <p id="emailError"></p>
+                <input type="text" id="password" placeholder="Password" name="password">
+                <p id="passError"></p>
+                <input type="text" id="conPas" placeholder="Confirm Password" name="confirm">
+                <p id="passError2"></p>
+            </div>
+            <div class="checkbox">
+                <input class="chek" type="checkbox" name="ok">
+                <p class="paragraph1">I accept the <span class="text-color">Terms of Use</span> & <span class="text-color">Privacy Policy.</span></p>
+            </div>
+            <button class="btn" type="submit">Register Now</button>
+        </div>
+    </form>
+    <p class="sing-in">Alredy have an account? <span class="undeline">Sing in</span></p>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
